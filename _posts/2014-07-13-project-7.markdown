@@ -1,0 +1,21 @@
+---
+title: Photo of the Day
+subtitle: Personal Project
+layout: default
+modal-id: 6
+date: 2014-07-15
+thumbnail: email_thumbnail1.jpg
+alt: Email image
+project-date: December 2019
+skills: Python, Raspberry Pi
+
+---
+As a Christmas gift to my family, I decided to create a program that sends a email every day with a family photo and inspirational quote. This is definitely a family favorite and one of the few gifts that hasn't been put away in a closet and forget about.
+
+To do this, I created a Python script that was run on a Raspberry Pi. I loaded a folder full of images onto the Pi. I then used smtplib to send emails and used BeautifulSoup to scrape Brainy Quote's quote of the day. An email with a randomly selected family photo and quote was then promptly delivered to each family member's inbox.
+
+I used crontab on the Raspberry Pi to automate running the script at noon every day.
+
+<div style="text-align:center">
+<img src="img/portfolio/email_thumbnail1.jpg" alt="Sample Email" style="width: 100%;" class="post_image" />
+</div>

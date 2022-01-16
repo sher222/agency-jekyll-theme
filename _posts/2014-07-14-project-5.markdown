@@ -1,15 +1,24 @@
 ---
-title: Startup Framework
-subtitle: Website Design
+title: On Board Electronics Enclosure
+subtitle: MATE ROV
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
+thumbnail: onboard-thumbnail.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: November 2020-July 2021
+skills: Soldering, Crimping, Testing, Debugging
 
 ---
+As CEO of my school's MATE ROV team, when key members of the electrical team graduated, I jumped in to lead the assembly of our custom onboard electronics PCB. This 4-layer PCB served as the interface for our communication board, tether, thrusters, sensors, cameras, Arduino, and motor controllers.
+<div style="text-align:center">
+<img src="img/portfolio/5/soldering_board.jpg" alt="Soldering Board" style="width: 30%;" class="post_image" />
+<img src="img/portfolio/5/testing_board.jpg" alt="Testing Board" style="width: 65%; margin-left: 4%;" class="post_image" />
+<p style="margin-top: -8px;">Left: soldering board, Right: testing</p>
+</div>
+I first had to familiarize myself with the board which was a challenge as the designer had already graduated. Throughout the rest of the year, I assembled the board as well as other components such as thrusters, sensors, and cameras. One major challenge was a finicky communication board that was no longer being sold. As the year progressed, I learned to test things individually and logically eliminate sources of error when systems broke. Beyond electrical work, I potted penetrators and found and fixed leaks. I also made additions to the PCB such as an Arduino-controlled infrared LED that mimicked the remote control we had for our video system.
+<div style="text-align:center">
+<img src="img/portfolio/5/completed_board.jpg" alt="Completed Board" style="width: 100%;" class="post_image" />
+<p style="margin-top: -8px;">Completed board</p>
+</div>
+In the end, this electrical system played a crucial role in the team winning 2nd place in the Monterey Regional, qualifying for the world championship for the first time in school history, and winning 3rd place in the telepresence MATE ROV World Championships.

@@ -1,15 +1,56 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: "Explore-and-Fuse:\ A Physarum-Inspired Approach to the Steiner Tree Problem"
+subtitle: MIT PRIMES Project
 layout: default
 modal-id: 1
-date: 2014-07-18
+date: 2021-09-18
 img: dreams.png
-thumbnail: dreams-thumbnail.png
+thumbnail: explore-thumbnail2.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+project-date: January - October 2021
+skills: Algorithms, Java, Python, Data Analysis
 ---
+In this project, I developed a novel Explore-and-Fuse approach to solving difficult, NP-hard problems. This approach was inspired by *Physarum Polycephalum* which is a unicellular green slime mold with the intriguing ability to solve mazes, form networks, and share information with other *Physarum* organisms through fusion. 
+
+<img src="img/portfolio/1/physarum_steiner.jpg" alt="Physarum organism forming Steiner Tree" style="width: 70%; margin-left: 15%;" class="post_image"/>
+
+In the beginning of the project, I spent a lot of time reading research papers and learning about both the biological aspects of *Physarum Polycephalum* as well as the different mathematical models of *Physarum*. From my research, I came up with the idea of exploring interactions between multiple *Physarum* using cellular model.
+
+Following this idea, I developed the *Model of Multiple Cells*. 
+ 
+<img src="img/portfolio/1/model_of_multiple_cells.jpg" alt="Model of Multiple Cells" style="width: 90%; margin-left: 5%;" class="post_image" />
+
+The *Model of Multiple Cells* consists of diamond-shaped *Physarum* organisms reshaping themselves and moving around until they come into contact and fuse.
+
+Using this model, I developed the *explore-and-fuse* approach where many individual *Physarum* organisms are initially spawned. The organisms independently gather information and form partial solutions as they fuse. Eventually, they fuse into one large organism that can optimally solve the global problem taking into account information gathered by the individual organisms. This approach presents a balance between speed and optimality.
+
+I then demonstrated the *explore-and-fuse* approach on the Euclidean Steiner Tree problem, creating the *Physarum Steiner Algorithm*. The Euclidean Steiner Tree problem basically asks for the shortest length tree connecting a set of points.
+<div style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UY270DoozJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Finally, to demonstrate the capabilities of the *Physarum Steiner Algorithm*, I applied it to a variety of problems. 
+<div style="text-align:center">
+<img src="img/portfolio/1/US_map.jpg" alt="US Map" style="width: 90%; margin-left: 5%;" class="post_image" />
+</div>
+*Physarum Steiner Algorithm* creating road network among large cities in the United States
+<div style="text-align:center">
+<img src="img/portfolio/1/obstacle_avoidance.jpg" alt="Obstacle Avoidance" style="width: 90%" class="post_image" />
+</div>
+*Physarum Steiner Algorithm* routing fire optic cable to connect households while avoiding obstacles such as a lake and park.
+<div style="text-align:center">
+<img src="img/portfolio/1/VLSI.jpg" alt="Obstacle Avoidance" style="width: 90%" class="post_image" />
+</div>
+VLSI (very large scale integration) chips design is one of the largest real-world applications for the Steiner Tree. Here, the *Physarum Steiner Algorithm* routes connections between 131 pads on an electronic board. 
+<div style="text-align:center">
+<img src="img/portfolio/1/topology.jpg" alt="Topology" style="width: 50%;" class="post_image" />
+</div>
+The *Physarum Steiner Algorithm* is able to find Steiner trees on other topological surfaces such as the torus and sphere.
+
+There were additional experiments done to validate the *Model of Multiple Cells* and test parameters of the *Physarum Steiner Algorithm* such as cell size, number of cells, time complexity, and  cell shape. These experiments were often large scale with over 1,000 trials, so I chose to run them on Amazon Web Service's Batch platform. I created container images uses Docker and learned to configure AWS security groups and platforms. 
+
+The data analysis was primarily done in Python using matplotlib. I wrote a script to download csv files from AWS and an additional java program to compile data from individual trials. Python was used to do additional computations and create graphs such as the one shown below.
+<div style="text-align:center">
+<img src="img/portfolio/1/sample_graph.jpg" alt="Sample Graph" style="width: 100%;" class="post_image" />
+</div>
+The actual *Physarum Steiner Algorithm* was written in Java and is available on [GitHub](https://github.com/sher222/Physarum-Swarm-Steiner-Algo). This project has resulted in 2 papers, [one](https://arxiv.org/abs/2106.11371) detailing the *Model of Multiple CELLs* and [another](https://arxiv.org/abs/2110.08233v1) detailing the *Physarum Steiner Algorithm*. Both have been submitted to journals, the *Journal of the Royal Society Interface* and *Nature Sci. Reports* respectively. This project has been presented at the MIT PRIMES Conference, the UMS Poster Session, and has been accepted to the Joint Mathematics Meeting 2022. A poster is available for download <a href="img/Explore-and-Fuse Poster.pdf" target="_blank">here</a>. My advisor for this project was Prof. Laura Schaposnik, with contributions from Fidel Schaposnik.

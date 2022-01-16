@@ -1,15 +1,24 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Ethernet Camera Streaming and Communication System
+subtitle: MATE ROV
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+thumbnail: 2/testing.jpg
+alt: Testing single camera stream
+project-date: August - January 2021
+skills: Python, Raspberry Pi, Arduino
 
 ---
+Reflecting on the 2020-2021 MATE ROV (underwater robotics) season, we agreed that one area that needed a major upgrade was our camera and communication system. Our communication system was based on a board that was no longer being sold and easily broke while our camera system utilized analog cameras resulting in very low resolution images that were impossible to use for computer vision algorithms.
+
+We decided to use an Ethernet communication system. From the beginning of the year, I worked on many different prototypes using a single Raspberry Pi to splice together multiple video streams, using Jetson Nanos, and finally using multiple Raspberry Pi's connected with an Ethernet switch. In the end, we chose to use a system in which a camera unit consisted of a Raspberry Pi Camera and a Pi Zero. The Raspberry Pi's were connected to the topside via a Ethernet switch. I also chose to use an Arduino Ethernet shield so the Arduino could directly communicate with the topside.
+<div style="text-align:center">
+<img src="img/portfolio/2/setup.jpg" alt="Setup" style="width: 100%;" class="post_image" />
+<p style="margin-top: -8px;">Setup with 3 Raspberry Pis & cameras, Ethernet switch, and Arduino</p>
+</div>
+With three cameras, the system can handle 30 fps at 1920x1080 with approximately 0.2 seconds of latency, which is a major improvement from previous years. Excited to be able to properly tackle image recognition tasks!
+<div style="text-align:center">
+<img src="img/portfolio/2/complete.jpg" alt="Complete testing" style="width: 100%;" class="post_image" />
+<p style="margin-top: -8px;">Testing latency with 3 camera streams and Arduino communication.</p>
+</div>

@@ -304,6 +304,8 @@ header .intro-text .intro-heading {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
+        text-align: left;
+
     }
 
     header .intro-text .intro-lead-in {
@@ -333,7 +335,39 @@ section h2.section-heading {
     margin-bottom: 15px;
     font-size: 40px;
 }
+.about-para {
+    margin-top: 30px;
+    float: right;
+}
+.about-img {
+    margin-top: 30px;
+    margin-right: 30px;
 
+    width: 40%;
+    float: left;
+}
+.section-heading {
+    margin-bottom: 60px;
+}
+.about-div {
+    display: flex
+}
+.about-buttons {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.buttons-div {
+    text-align: center;
+
+}
+.post__content {
+    text-align: left;
+}
+.post_image {
+    /*width: 70%;*/
+    /*margin-left: 15%;*/
+}
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;

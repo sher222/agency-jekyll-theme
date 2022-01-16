@@ -1,15 +1,24 @@
 ---
-title: Treehouse
-subtitle: Website Design
+title: Vaccinations for All
+subtitle: Silicon Valley Science Fair 
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+thumbnail: vac_thumbnail.jpg
+alt: Full CAD model of design
+project-date: November 2019 - March 2020 
+skills: CAD, 3D printing, Arduino
 
 ---
+For my Synopsys Science Fair project, I decided to create a system which would autonomously administer vaccinations, decreasing the rate of needle stick injuries to healthcare workers and the spread of blood borne diseases due to reuse of needles. The system eliminates the need for a human to administer the vaccine and also automatically disposes of used needles in SHARP containers. This project won a Honorable Mention in the Biological Science and Engineering category at the Synopsys Silicon Valley Science and Technology Championship.
+
+I began this project by researching the necessary components, many linear actuators and a solenoids. I then created an overall CAD model using Autodesk Fusion.
+<div style="text-align:center">
+<img src="img/portfolio/4/full.jpg" alt="Overall CAD model" style="width: 100%;" class="post_image" />
+<p style="margin-top: -8px;">Overall model with spiral area for loading vaccines, solenoid to control release of vaccine into injector device, injector device containing 5 actuators, and finally a SHARP container.</p>
+</div>
+A more detailed CAD was created for individual parts that needed to be 3D printed. Laser cutting was also used to create a frame that the entire contraption could be mounted to. In addition, an Arduino and motor controller was used to control the system.
+<div style="text-align:center">
+<img src="img/portfolio/4/testing.jpg" alt="Testing linear actuator" style="width: 100%;" class="post_image" />
+<p style="margin-top: -8px;">Testing linear actuator.</p>
+</div>

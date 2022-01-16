@@ -1,15 +1,27 @@
 ---
-title: Golden
-subtitle: Website Design
+title: Payload Test Arduino Shield PCB
+subtitle: Valley Christian ISS Research Lab
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
+thumbnail: pcb-thumbnail.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: January 2022
+skills: PCB design, schematic design
 
 ---
+For the past three years, as part of the ISS Research program, I worked a lot with these payload boards (pictured below). Normally, this board plugs into another custom PCB connected to a basic stamp, but it was very hard to debug using this system. As a result, a lot of us resorted to counting header pins and connecting the payload board to Arduino pins, and miscounting has resulted in quite a few shorted boards.
+<div style="text-align:center">
+<img src="img/portfolio/3/sample_payload_board.jpg" alt="Sample Payload Board" style="width: 75%;" class="post_image" />
+</div>
+As a result, I decided to create an Arduino shield that this payload board could easily plug into. This way, teams could easily test their electronics circuits. The shield is compatible with both the Arduino UNO and MEGA and was designed so that the payload board stands up vertically, providing easy access to the circuit so teams could probe with multimeters. The board maps every single pin on the payload board, from analog to digital output to data lines, to one on the Arduino. The board also includes indicator LEDs on all lines and test points.
+
+The schematic and board design were done in Eagle.
+<div style="text-align:center">
+<img src="img/portfolio/3/schematic.jpg" alt="Schematic" style="width: 100%;" class="post_image" />
+</div>
+The board is a 2 layer board. Not all Arduino pins were needed, so the board was made shorter to save space and manufacturing costs. This also required creating a custom part and footprint to get rid of the additional pins.
+<div style="text-align:center">
+<img src="img/portfolio/3/board.jpg" alt="Board" style="width: 100%;" class="post_image" />
+</div>
+The board and schematic has undergone multiple design reviews by mentors and will be ordered and assembled soon!
