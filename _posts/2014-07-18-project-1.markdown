@@ -37,7 +37,7 @@ Finally, to demonstrate the capabilities of the *Physarum Steiner Algorithm*, I 
 <div style="text-align:center">
 <img src="img/portfolio/1/obstacle_avoidance.jpg" alt="Obstacle Avoidance" style="width: 90%" class="post_image" />
 </div>
-*Physarum Steiner Algorithm* routing fire optic cable to connect households while avoiding obstacles such as a lake and park.
+*Physarum Steiner Algorithm* routing fiber optic cable to connect households while avoiding obstacles such as a lake and park.
 <div style="text-align:center">
 <img src="img/portfolio/1/VLSI.jpg" alt="Obstacle Avoidance" style="width: 90%" class="post_image" />
 </div>
