@@ -12,7 +12,7 @@ skills: CAD, 3D printing, Arduino
 ---
 For my Synopsys Science Fair project, I decided to create a system which would autonomously administer vaccinations, decreasing the rate of needle stick injuries to healthcare workers and the spread of blood borne diseases due to reuse of needles. The system eliminates the need for a human to administer the vaccine and also automatically disposes of used needles in SHARP containers. This project won a Honorable Mention in the Biological Science and Engineering category at the Synopsys Silicon Valley Science and Technology Championship.
 
-I began this project by researching the necessary components, many linear actuators and a solenoids. I then created an overall CAD model using Autodesk Fusion.
+I began this project by researching the necessary components such as linear actuators and solenoids. I then created an overall CAD model using Autodesk Fusion.
 <div style="text-align:center">
 <img src="img/portfolio/4/full.jpg" alt="Overall CAD model" style="width: 100%;" class="post_image" />
 <p style="margin-top: -8px;">Overall model with spiral area for loading vaccines, solenoid to control release of vaccine into injector device, injector device containing 5 actuators, and finally a SHARP container.</p>

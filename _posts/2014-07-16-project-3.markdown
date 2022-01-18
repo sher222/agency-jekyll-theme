@@ -10,7 +10,7 @@ project-date: January 2022
 skills: PCB design, schematic design
 
 ---
-For the past three years, as part of the ISS Research program, I worked a lot with these payload boards (pictured below). Normally, this board plugs into another custom PCB connected to a basic stamp, but it was very hard to debug using this system. As a result, a lot of us resorted to counting header pins and connecting the payload board to Arduino pins, and miscounting has resulted in quite a few shorted boards.
+For the past three years, as part of the ISS Research program, I worked a lot with these payload boards (pictured below). Normally, this board plugs into another custom PCB connected to a basic stamp, a microcontroller, but it was very hard to debug using this system. As a result, a lot of us resorted to counting header pins and connecting the payload board to Arduino pins, and miscounting has resulted in quite a few shorted boards.
 <div style="text-align:center">
 <img src="img/portfolio/3/sample_payload_board.jpg" alt="Sample Payload Board" style="width: 75%;" class="post_image" />
 </div>
