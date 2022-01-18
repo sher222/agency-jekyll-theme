@@ -338,6 +338,8 @@ section h2.section-heading {
 .about-para {
     margin-top: 30px;
     float: right;
+    max-width: 55%;
+    min-width: 50%;
 }
 .about-img {
     margin-top: 30px;
@@ -345,12 +347,18 @@ section h2.section-heading {
 
     width: 40%;
     float: left;
+    /*flex-basis: 70%;*/
 }
 .section-heading {
     margin-bottom: 60px;
 }
 .about-div {
-    display: flex
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
 }
 .about-buttons {
     margin-top: 30px;
