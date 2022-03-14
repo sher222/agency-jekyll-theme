@@ -4,7 +4,7 @@ subtitle: Valley Christian ISS Research Lab
 layout: default
 modal-id: 3
 date: 2014-07-16
-thumbnail: pcb-thumbnail.jpg
+thumbnail: pcb-thumbnail.jpeg
 alt: image-alt
 project-date: January 2022
 skills: PCB design, schematic design
@@ -24,4 +24,7 @@ The board is a 2 layer board. Not all Arduino pins were needed, so the board was
 <div style="text-align:center">
 <img src="img/portfolio/3/board.jpg" alt="Board" style="width: 100%;" class="post_image" />
 </div>
-The board and schematic has undergone multiple design reviews by mentors and will be ordered and assembled soon!
+The board was ordered after design reviews by mentors. I assembled the board including surface mounted LEDs and diodes. It is pictured below.
+<div style="text-align:center">
+<img src="img/portfolio/3/assembled_pcb.jpeg" alt="Board" style="width: 100%;" class="post_image" />
+</div>
