@@ -1,24 +1,54 @@
 ---
-title: On Board Electronics Enclosure
+title: Underwater Robotics
 subtitle: MATE ROV
 layout: default
 modal-id: 5
 date: 2014-07-14
-thumbnail: onboard-thumbnail.jpg
+thumbnail: rov_thumbnail.png
 alt: image-alt
-project-date: November 2020-July 2021
-skills: Soldering, Crimping, Testing, Debugging
+project-date: August 2018-July 2022
+skills: OpenCV, Arduino, Raspberry Pi, Technical Writing, Team Management, Soldering, Crimping, Testing, Debugging
 
 ---
-As CEO of my school's MATE ROV team, when key members of the electrical team graduated, I jumped in to lead the assembly of our custom onboard electronics PCB. This 4-layer PCB served as the interface for our communication board, tether, thrusters, sensors, cameras, Arduino, and motor controllers.
+Over my four years in high school, I was heavily in my school's underwater robotics team where we built robots to compete in the MATE competition. Our ROVs had to do tasks such as taking photos of maps on the bottom of the pool, lift various objects, and measure the length of rubber fish. In addition, we had to write and submit over 20 pages of technical documentation detailing our design, safety procedures, and corporate reponsibility programs. I served as the CEO of the team for two years and led the team to two top five finishes at the world championships for the first time in school history. 
+
+<b>Ethernet camera streaming and communication system</b>
+
+One piece of software I developed was an Ethernet camera streaming and communication system. Reflecting on the 2020-2021 MATE ROV (underwater robotics) season, we agreed that one area that needed a major upgrade was our camera and communication system. Our communication system was based on a board that was no longer being sold and easily broke while our camera system utilized analog cameras resulting in very low resolution images that were impossible to use for computer vision algorithms.
+
+We decided to use an Ethernet communication system. From the beginning of the year, I worked on many different prototypes using a single Raspberry Pi to splice together multiple video streams, using Jetson Nanos, and finally using multiple Raspberry Pi's connected with an Ethernet switch. In the end, we chose to use a system in which a camera unit consisted of a Raspberry Pi Camera and a Pi Zero. The Raspberry Pi's were connected to the topside via a Ethernet switch. I also chose to use an Arduino Ethernet shield so the Arduino could directly communicate with the topside.
+<div style="text-align:center">
+<img src="img/portfolio/2/setup_neat.jpeg" alt="Setup" style="width: 45%;" class="post_image" />
+<img src="img/portfolio/2/complete.jpg" alt="Complete testing" style="width: 45%;" class="post_image" />
+<p style="margin-top: -8px;">Testing latency with 3 camera streams and Arduino communication.</p>
+</div>
+With three cameras, the system can handle 30 fps at 1920x1080 with approximately 0.2 seconds of latency, which is a major improvement from previous years and allows to tackle image recognition tasks.
+
+<b>Coral identification program</b>
+
+One year, we were challenged to build a computer vision program that could take a photo of "coral" made out of white and pink pcv pipe and compare it to a previous image and highlight areas that had either died, been bleached, recovered from bleaching, or grown. To tackle this challenge, I built a python program using openCV. I first applied a mask to isolate only the pink and white PCB pipe and thus disregard the background. I first implemented image alignment which idnetified matching features on both images and then applied a homography. After the two images were aligned, I took the difference between them and drew bounding boxes around areas of high difference. Based on whether the area had changed from pink to white, white to pink, or other cases, I drew differently colored bounding boxes.
+
+<div style="text-align:center">
+<img src="img/portfolio/5/before_final.jpg" alt="Threshold" style="width: 25%;" class="post_image" />
+<img src="img/portfolio/5/matches.png" alt="Matches" style="width: 45%;" class="post_image" />
+<img src="img/portfolio/5/after.jpg" alt="Final output" style="width: 25%;" class="post_image" />
+<p style="margin-top: -8px;">Left: applying mask, Middle: aligning images, Right: Final output</p>
+</div>
+
+<b>Onboard electronics system</b>
+
+My team chose to build a custom PCB that fit inside our watertight electronic enclosure onboard the ROV. I designed and conducted design reviews on the board as well as assembling it. Through this expereince, I learned to test things individually and logically eliminate sources of error when systems broke. Beyond electrical work, I potted penetrators and found and fixed leaks. 
+
+
+
 <div style="text-align:center">
 <img src="img/portfolio/5/soldering_board.jpg" alt="Soldering Board" style="width: 30%;" class="post_image" />
 <img src="img/portfolio/5/testing_board.jpg" alt="Testing Board" style="width: 65%; margin-left: 4%;" class="post_image" />
 <p style="margin-top: -8px;">Left: soldering board, Right: testing</p>
 </div>
-I first had to familiarize myself with the board which was a challenge as the designer had already graduated. Throughout the rest of the year, I assembled the board as well as other components such as thrusters, sensors, and cameras. One major challenge was a finicky communication board that was no longer being sold. As the year progressed, I learned to test things individually and logically eliminate sources of error when systems broke. Beyond electrical work, I potted penetrators and found and fixed leaks. I also made additions to the PCB such as an Arduino-controlled infrared LED that mimicked the remote control we had for our video system.
 <div style="text-align:center">
 <img src="img/portfolio/5/completed_board.jpg" alt="Completed Board" style="width: 100%;" class="post_image" />
 <p style="margin-top: -8px;">Completed board</p>
 </div>
-In the end, this electrical system played a crucial role in the team winning 2nd place in the Monterey Regional, qualifying for the world championship for the first time in school history, and winning 3rd place in the telepresence MATE ROV World Championships.
+
+

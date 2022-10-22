@@ -1,16 +1,18 @@
 ---
 title: "Explore-and-Fuse:\ A Physarum-Inspired Approach to the Steiner Tree Problem"
-subtitle: MIT PRIMES Project
+subtitle: MIT PRIMES
 layout: default
 modal-id: 1
 date: 2021-09-18
 img: dreams.png
-thumbnail: explore-thumbnail2.jpg
+thumbnail: explore_thumbnail.png
 alt: image-alt
 project-date: January - October 2021
 skills: Algorithms, Java, Python, Data Analysis
 ---
-In this project, I developed a novel Explore-and-Fuse approach to solving difficult, NP-hard problems. This approach was inspired by *Physarum Polycephalum* which is a unicellular green slime mold with the intriguing ability to solve mazes, form networks, and share information with other *Physarum* organisms through fusion. 
+In this project, I developed a novel biologically-inspired explore-and-fuse approach to solving difficult, NP-hard problems. This project resulted in two published papers and won numerous awards (more information at bottom).
+
+This approach was inspired by *Physarum Polycephalum* which is a unicellular green slime mold with the intriguing ability to solve mazes, form networks, and share information with other *Physarum* organisms through fusion. 
 
 <img src="img/portfolio/1/physarum_steiner.jpg" alt="Physarum organism forming Steiner Tree" style="width: 70%; margin-left: 15%;" class="post_image"/>
 
@@ -55,6 +57,6 @@ The actual *Physarum Steiner Algorithm* was written in Java and is available on 
 </div>
 
 
-This project has resulted in 2 papers, [one](https://arxiv.org/abs/2106.11371) detailing the *Model of Multiple CELLs* and [another](https://arxiv.org/abs/2110.08233v1) detailing the *Physarum Steiner Algorithm*. The first paper has been accepted to the *Journal of the Royal Society Interface* and the second paper has been submitted to *Nature Scientific Reports*. This project has been presented at the MIT PRIMES Conference, the UMS Poster Session, and has been accepted to the Joint Mathematics Meeting 2022. 
+This project has resulted in 2 papers, "Cell fusion through slime mould network dynamics"(available [here](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2022.0054)) published in *Journal of the Royal Society Interface* detailing the *Model of Multiple CELLs* and "A Physarum-inspired approach to the Euclidean Steiner tree problem" (available [here](https://www.nature.com/articles/s41598-022-18316-3)) published in *Scientific Reports* detailing the *Physarum Steiner Algorithm*. This project has been presented at the MIT PRIMES Conference, the UMS Poster Session, and has been accepted to the Joint Mathematics Meeting 2022. 
 
-As a result of this project, I was named a Regeneron Science Talent Search Scholar, or a top 300 future scientist or engineer. This project was also selected as a Grand Prize Winner at the Silicon Valley Synopsys Science and Engineering Fair. A poster is available for download <a href="img/Explore-and-Fuse Poster.pdf" target="_blank">here</a>. My advisor for this project was Prof. Laura Schaposnik, with contributions from Fidel Schaposnik.
+As a result of this project, I was named a Regeneron Science Talent Search Scholar, or a top 300 future scientist or engineer. This project was also selected as a Grand Prize Winner at the Silicon Valley Synopsys Science and Engineering Fair. I was also named an ISEF Finliast and won an ISEF Special Award from the CIA. A poster is available for download <a href="img/Explore-and-Fuse Poster.pdf" target="_blank">here</a>. My advisor for this project was Prof. Laura Schaposnik, with contributions from Fidel Schaposnik.

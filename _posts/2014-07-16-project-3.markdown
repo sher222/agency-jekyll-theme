@@ -4,7 +4,7 @@ subtitle: Valley Christian ISS Research Lab
 layout: default
 modal-id: 3
 date: 2014-07-16
-thumbnail: pcb-thumbnail.jpeg
+thumbnail: pcb_thumbnail.png
 alt: image-alt
 project-date: January 2022
 skills: PCB design, schematic design

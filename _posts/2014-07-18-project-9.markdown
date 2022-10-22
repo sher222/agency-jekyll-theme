@@ -1,0 +1,44 @@
+---
+title: "Roads to Quicksilver"
+subtitle: MathHappens Foundation
+layout: default
+modal-id: 8
+date: 2021-09-18
+img: dreams.png
+thumbnail: roads_thumbnail.png
+alt: image-alt
+project-date: February - July 2021
+skills: Algorithms, Python, OpenCV, Arduino, Woodworking, CAD
+---
+On a dusty wooden patio stands a line of families waiting for their turn with a strange looking wooden contraption. One by one, kids place lego chains on a laser-etched board, trying to build a railroad between color changing LEDs on the board. Once the last rail is in place, a computer vision algorithm analyzes the network, displays the results, and offers to teach users how to use a graph theory algorithm to build the shortest railroad.
+
+<div style="text-align:center">
+<img src="img/portfolio/roads/event2.png" alt="Sheryl next to project" style="width: 35%;" class="post_image"/>
+<img src="img/portfolio/roads/event.png" alt="picture of kids with project" style="width: 60%;" class="post_image"/>
+</div>
+
+<div style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OPQyWzAePvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+I built this project, Roads to Quicksilver, in collabaration with the MathHappens Foundation. It was visited by hundreds at the Almaden Quicksilver Mining Museum’s Play Like a Miner event. Roads to Quicksilver aims to teach visitors about graph theory, Kruskal’s algorithm, and the history of the Almaden Quicksilver mines by challenging them to build, using lego chains, the shortest railroad possible between different historical landmarks in the mine. This is in reality a formulation of the classical Minimum Spanning Tree problem, which asks for the shortest tree spanning a set of nodes. This problem has many everyday applications such as transportation and communication networks. The Minimum Spanning Tree is solved by the famous Kruskal’s algorithm, which says to iteratively build the shortest edge that connects two nodes that are not already connected until all nodes are connected. With Roads to Quicksilver, LEDs embedded into the board change color so that connected locations are all the same color. Visitors are then instructed to build the shortest railroad connecting two LEDs of different colors until all points are connected.
+
+<img src="img/portfolio/roads/baseboard.png" alt="Baseboard of project" style="width: 70%; margin-left:15%;" class="post_image"/>
+
+The construction of Roads to Quicksilver was no small feat. Mechanically, the project consists of laser cut plywood screwed together with brackets and 1x1 wood pieces. Custom 3D printed pegs were used to hold the LEDs to the plywood. The laser etching of the board took over 8 hours, resulted in two broken laser cutters, and required a visit from the fire department. I created many models of the overall proejct as well as individual parts in Autodesk Fusion. I learned a lot of woodworking skills such as using a table saw and staining wood.
+
+Electrically, there is a maze of wires under the board connecting the RGB LEDs to an Arduino MEGA. This Arduino MEGA is connected via USB to the Raspberry Pi mounted behind the screen. 
+
+<img src="img/portfolio/roads/result_screen.png" alt="Result screen on GUI" style="width: 70%; margin-left:15%;" class="post_image"/>
+
+The Raspberry Pi runs a GUI I built using react.js. The GUI displays instructions and feedback to the user. For example, it can display the graph that a user built on the board. 
+
+<img src="img/portfolio/roads/computer_vision_algorithm.png" alt="Computer vision algorithm" style="width: 70%; margin-left:15%;" class="post_image"/>
+
+It also consists of a computer vision algorithm that utilizes the python openCV library. When the user hits a button, a attached Raspberry Pi camera takes a photo. The algorithm first isolates the chains the user built by finding differences against a previous photo with no chains on the board. The algorithm then computes the percentage of chain in convex hulls of possible edges and finds edges with percentages that exceed a given threshold.
+
+<img src="img/portfolio/roads/project_alone.png" alt="Computer vision algorithm" style="width: 70%; margin-left:15%;" class="post_image"/>
+
+I hope that Roads to Quicksilver will serve as an example of how engineering and technology can be used to present concepts in exciting and accessible ways while combining a variety of subject areas from history to graph theory.
+
+
