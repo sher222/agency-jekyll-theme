@@ -1,20 +1,132 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryl Hsu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<div class="home">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF5EC;
+            color: #333;
+            padding: 40px;
+            padding-left: 10%;
+            padding-right: 10%;
+            font-family: 'Work Sans', sans-serif;
 
-  <h1>Posts</h1>
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .news-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .date {
+            width: 100px;
+            font-weight: bold;
+        }
+        .description {
+            flex: 1;
+        }
+        a {
+        color: inherit; /* Removes the default hyperlink color */
+        /* text-decoration: inherit; Inherits text decoration from the parent, removing underline */
+        }
+        .icons {
+            margin-top: 40px;
+        }
+        .icons a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .fab {
+            font-size: 24px; /* Adjust the size as needed */
+        }
+        .fas{
+            font-size: 24px;
+        }
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    </style>
+</head>
+<body>
+    <h1>Sheryl Hsu</h1>
+    <p>I’m currently an undergrad at Stanford University. I'm broadly interested in machine learning and machine learning systems. Currently, I’m working on reinforcement learning and LLMs at <a href="https://irislab.stanford.edu">IRIS lab</a> and ML systems at <a href="https://www.mlfoundry.com">Foundry</a>.</p>
+    <h2>Some things I’ve worked on:</h2>
+    <ul>
+        <li>Better aligning LLMs with humans using different forms of preference data as part of <a href="https://irislab.stanford.edu">IRIS lab</a></li>
+        <li>Building out and optimizing fine-tuning as a service at <a href="https://www.mlfoundry.com">Foundry</a></li>
+        <li>Identifying malicious and vulnerable extensions at <a href="https://esrg.stanford.edu">Stanford’s Emperical Security Research Group</a></li>
+        <li>Data visualization tools at <a href="https://www.twosigma.com">Two Sigma</a></li>
+        <li>iOS app for jazz musicians (7k downloads) called <a href="https://elicksapp.com">elicks</a></li>
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <h2 style="margin-bottom: 20px;">News:</h2>
+    <div class="news-item">
+        <div class="date">06/17/24</div>
+        <div class="description">It’s my first day at <a href="https://www.mlfoundry.com">Foundry</a></div>
+    </div>
+    <div class="news-item">
+        <div class="date">05/01/24</div>
+        <div class="description">Our paper <a href="https://austrian-code-wizard.github.io/c3po-website/">“RLVF: Learning from Verbal Feedback without Overgeneralization”</a> was accepted to ICML</div>
+    </div>
+    <div class="news-item">
+        <div class="date">04/08/24</div>
+        <div class="description"><a href="https://www.stanfordaiclub.org">Stanford AI Club</a>, which I co-founded, officially launches</div>
+    </div>
+    <div class="news-item">
+        <div class="date">01/02/24</div>
+        <div class="description">First day of my internship at <a href="https://www.hudsonrivertrading.com">Hudson River Trading</a></div>
+    </div>
+    <div class="news-item">
+        <div class="date">11/15/23</div>
+        <div class="description">Our paper <a href="https://cispa.de/en/research/publications/4057-what-is-in-the-chrome-web-store-">“What is in the Chrome Web Store”</a> has been accepted to AsiaCCS</div>
+    </div>
+    <div class="news-item">
+        <div class="date">06/19/23</div>
+        <div class="description">First day of my internship at <a href="https://www.twosigma.com">Two Sigma</a></div>
+    </div>
+    <div class="news-item">
+        <div class="date">09/26/22</div>
+        <div class="description">My app <a href="https://elicksapp.com">elicks</a> is officially available in the Apple App Store</div>
+    </div>
+    <h2>Two truths and a lie:</h2>
+    <ul>
+        <li>I’ve gone stand up paddle boarding inside a drain pipe off a river</li>
+        <li>I played trombone for 10 years and performed at Carnegie hall</li>
+        <li>I once made the entire school evacuate by improperly using a laser cutter</li>
+    </ul>
 
-</div>
+    <div class="icons" style="text-align: center; margin-top: 60px;">
+        <p>Contact me:</p>
+        <a href="mailto:sherylh@stanford.edu"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/SherylHsu02" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/sheryl-hsu-83b84a183/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <a href="https://github.com/sher222" target="_blank"><i class="fab fa-github"></i></a>
+
+    </div>
+
+</body>
+</html>
